@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 body{
     margin: 0;
     background-color:  rgb(215, 215, 216);
@@ -21,7 +25,7 @@ body{
     margin: 0;
     color: white;
     font-size: 200px;
-    box-shadow: 3px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 .cuerpo{
@@ -32,11 +36,9 @@ body{
 .column-1{
     float: left;
     width: 20%;
-    height: 100%;
     background-color: rgb(87, 179, 91);
     color: white;
-    padding-bottom:100%;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
 }
 .column-2{
     float: left;
@@ -51,17 +53,160 @@ body{
 .column-3{
     float: left;
     width: 20%;
-    height: 100%;
-    background-color: rgb(190, 85, 85);
+    background-color: rgb(179, 3, 3);
     color: white;
-    padding-bottom:100%;
     flex-wrap: wrap;
 }
 
+.lugares-interes{
+    display: flex;
+}
+
+.column-4{
+    float: left;
+    width: 70%;
+    flex-wrap: wrap;
+}
+
+.column-5{
+    float: left;
+    width: 30%;
+    flex-wrap: wrap;
+    margin-right: 20px;
+}
+
+.img-lugares{
+    width: 100%;
+}
+
 .mapa{
-margin-top: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .d-block{
     height: 600px;
+}
+
+p, h3, h4{
+    margin: 10px;
+}
+
+.img-historia{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.lateral header{
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.158);
+    }
+ 
+.lateral ul{
+    list-style:none;
+    padding-left:0;
+    margin-top:0;
+    }
+
+.lateral ul li{
+    display:block;
+    position: relative;
+    padding: 8px 10px;
+    margin-left:0;
+    border-bottom:1px solid #ffffff2a
+    }
+    
+.lateral ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration:none;
+    }
+    
+.lateral ul li a:after{
+    content: ' ';
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    }
+    
+.lateral ul li:hover, .lateral ul li:hover a{
+    background: rgba(255, 255, 255, 0.158);
+    color: rgb(255, 255, 255);
+    }
+
+.noticias {
+    padding: 20px;
+    }
+
+.img-noticia {
+    width: 100%;
+    }
+    
+.fecha-noticia {
+    margin-top: 10px;
+    text-align: center;
+    }
+    
+article {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.048);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    }
+
+.footer {
+    background-color: #000;
+    padding: 20px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+    }
+
+@media screen and (max-width: 700px) {
+    
+    #titulo{
+        font-size: 70px;
+    }
+    
+    .cuerpo{
+        display: block;
+    }
+    
+    .column-1{
+        width: 100%;
+    }
+    .column-2{
+        width: 100%;
+    }
+    
+    .column-3{
+        width: 100%;
+    }
+
+    .lugares-interes{
+        display: block;
+    }
+    
+    .column-4{
+        width: 100%;
+    }
+    
+    .column-5{
+        width: 100%;
+    }
+
+    .d-block{
+        height: 300px;
+    }
+
+    iframe{
+        width: 90%;
+        height: 300px;
+    }
 }
